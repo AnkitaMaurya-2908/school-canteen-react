@@ -1,9 +1,10 @@
 import React from "react";
 import { students } from "../assets/assests";
 import Students from "../components/Students";
-
+import AddStudent from "../components/StudentForm"
 const StudentsPage = () => {
   return (
+    <>
     <div className="px-6 md:px-16 lg:px-24 xl:px-32 py-12">
       <div className="text-center px-4">
         <h1 className="text-3xl md:text-4xl font-bold text-[#463f3a] mb-3">
@@ -21,7 +22,13 @@ const StudentsPage = () => {
           <Students key={student.id} student={student} />
         ))}
       </div>
+      <div className ="mt-12">
+          <AddStudent/>
+
+      </div>
+
     </div>
+    </>
   );
 };
 

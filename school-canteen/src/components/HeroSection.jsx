@@ -17,7 +17,7 @@ const HeroSection = () => {
 
   return (
     <>
-      <div className="relative h-[34vw] bg-red-100 mt-4 rounded-lg overflow-hidden">
+      <div className="relative h-[34vw] shadow-2xl mt-4 rounded-lg overflow-hidden">
         {images.map((image, index) => (
           <img
             key={index}
