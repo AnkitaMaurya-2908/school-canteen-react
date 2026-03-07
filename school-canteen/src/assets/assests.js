@@ -80,3 +80,34 @@ export const snacks = [
 { id: 23, name: "Paneer Pizza", price: 70, image: "https://images.unsplash.com/photo-1594007654729-407eedc4be65?w=800", description: "Pizza topped with paneer cubes.", category: "Pizza" },
 { id: 24, name: "Chicken Pizza", price: 80, image: "https://images.unsplash.com/photo-1513104890138-7c749659a591?w=800", description: "Pizza topped with chicken pieces.", category: "Pizza" },
 ]
+
+export const students = [
+  {
+    id: 1,
+    name: "Aarav Sharma",
+    referralCode: "EDZ123",
+    totalSpent: 120,
+    image: "https://as1.ftcdn.net/jpg/08/68/15/92/1000_F_868159211_UfG4lUBXAgFvwwDuED4ssJb6N2PTahWV.jpg"
+  },
+  {
+    id: 2,
+    name: "Ananya Gupta",
+    referralCode: "EDZ456",
+    totalSpent: 90,
+    image: "https://ccrc.tc.columbia.edu/arccnetwork/wp-content/uploads/2024/03/arcc-slider-you-cant-deny-whole-student.png"
+  },
+  {
+    id: 3,
+    name: "Rohan Verma",
+    referralCode: "EDZ789",
+    totalSpent: 200,
+    image: "https://images.unsplash.com/photo-1729821728958-4486e16d807d?q=80&w=1674&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+  },
+  {
+    id: 4,
+    name: "Priya Singh",
+    referralCode: "EDZ321",
+    totalSpent: 75,
+    image: "https://blog.planbook.com/wp-content/uploads/2022/02/image1-3.jpg"
+  }
+]
