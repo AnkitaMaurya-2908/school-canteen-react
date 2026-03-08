@@ -8,15 +8,15 @@ export const images =  [HeroImage1, HeroImg2, HeroImg3, HeroImg5, HeroImg5];
 
 export const menu_list = [
   {
-    menu_name: "Sandwiches",
+    menu_name: "Sandwich",
     menu_image: "https://images.unsplash.com/photo-1528735602780-2552fd46c7af"
   },
   {
-    menu_name: "Burgers",
+    menu_name: "Burger",
     menu_image: "https://images.unsplash.com/photo-1550547660-d9450f859349"
   },
   {
-    menu_name: "Wraps & Rolls",
+    menu_name: "Rolls",
     menu_image: "https://images.unsplash.com/photo-1604908176997-125f25cc6f3d"
   },
   {
@@ -31,22 +31,7 @@ export const menu_list = [
     menu_name: "Noodles",
     menu_image: "https://images.unsplash.com/photo-1569718212165-3a8278d5f624"
   },
-  {
-    menu_name: "Snacks",
-    menu_image: "https://images.unsplash.com/photo-1599490659213-e2b9527bd087"
-  },
-  {
-    menu_name: "Desserts",
-    menu_image: "https://images.unsplash.com/photo-1551024601-bec78aea704b"
-  },
-  {
-    menu_name: "Cold Drinks",
-    menu_image: "https://images.unsplash.com/photo-1598038990523-32bcaa29f679?q=80&w=987&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
-  },
-  {
-    menu_name: "Milkshakes",
-    menu_image: "https://images.unsplash.com/photo-1572490122747-3968b75cc699"
-  }
+
 ];
 
 export const snacks = [

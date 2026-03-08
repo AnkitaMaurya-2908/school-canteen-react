@@ -63,12 +63,6 @@ const ExploreMenu = ({ category, setCategory }) => {
               >
                 {item.menu_name}
               </span>
-
-              <span
-                className={`w-1.5 h-1.5 rounded-full transition-all duration-300 ${
-                  isActive ? "bg-orange-500" : "bg-transparent"
-                }`}
-              />
             </div>
           );
         })}

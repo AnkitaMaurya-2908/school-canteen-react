@@ -1,10 +1,9 @@
+
 import React, { useState } from "react";
-import Students from "./Students";
 
-const AddStudent = () => {
-  const [students, setStudents] = useState([]);
+const AddStudent = ({ setStudents }) => {
+
   const [showModal, setShowModal] = useState(false);
-
   const [name, setName] = useState("");
   const [image, setImage] = useState("");
 
@@ -13,16 +12,17 @@ const AddStudent = () => {
   };
 
   const handleAddStudent = () => {
+
     if (!name.trim()) return;
 
     const newStudent = {
       id: Date.now(),
-      name: name,
+      name,
       referralCode: generateReferralCode(),
       totalSpent: 0,
       image:
         image ||
-        "https://cdn.pixabay.com/photo/2023/02/18/11/00/icon-7797704_1280.png",
+        "https://cdn.pixabay.com/photo/2018/04/18/18/56/user-3331256_1280.png",
     };
 
     setStudents((prev) => [...prev, newStudent]);
@@ -33,25 +33,26 @@ const AddStudent = () => {
   };
 
   return (
-    <div className="w-full">
-      <div className="flex justify-start mb-8">
-        <button
-          onClick={() => setShowModal(true)}
-          className="bg-[#e07a5f] text-white px-5 py-2 rounded-lg"
-        >
-           Add Student
-        </button>
-      </div>
+    <div>
 
-      <div className="flex flex-wrap gap-6">
-        {students.map((student) => (
-          <Students key={student.id} student={student} />
-        ))}
-      </div>
+      <button
+        onClick={() => setShowModal(true)}
+        className="bg-[#e07a5f] text-white px-5 py-2 rounded-lg"
+      >
+        Add Student
+      </button>
 
       {showModal && (
-        <div className="fixed inset-0 bg-black/40 flex items-center justify-center">
-          <div className="bg-white rounded-xl p-6 w-[350px] flex flex-col gap-4">
+        <div
+          className="fixed inset-0 bg-black/40 flex items-center justify-center"
+          onClick={() => setShowModal(false)}
+        >
+
+          <div
+            className="bg-white rounded-xl p-6 w-[350px] flex flex-col gap-4"
+            onClick={(e) => e.stopPropagation()}
+          >
+
             <h2 className="text-lg font-semibold">Add Student</h2>
 
             <input
@@ -64,13 +65,14 @@ const AddStudent = () => {
 
             <input
               type="text"
-              placeholder="Paste image URL"
+              placeholder="Paste image URL (optional)"
               className="border rounded-md px-4 py-2"
               value={image}
               onChange={(e) => setImage(e.target.value)}
             />
 
             <div className="flex justify-end gap-3">
+
               <button
                 onClick={() => setShowModal(false)}
                 className="px-4 py-2 border rounded-md"
@@ -79,15 +81,20 @@ const AddStudent = () => {
               </button>
 
               <button
+                disabled={!name.trim()}
                 onClick={handleAddStudent}
-                className="bg-[#e07a5f] text-white px-4 py-2 rounded-md"
+                className="bg-[#e07a5f] text-white px-4 py-2 rounded-md disabled:opacity-50"
               >
                 Add
               </button>
+
             </div>
+
           </div>
+
         </div>
       )}
+
     </div>
   );
 };

@@ -29,10 +29,8 @@ const HeroSection = () => {
           />
         ))}
 
-        {/* Dark gradient overlay */}
         <div className="absolute inset-0 bg-gradient-to-r from-black/60 via-black/30 to-transparent" />
 
-        {/* Text overlay */}
         <div className="mt-12 absolute inset-0 flex flex-col justify-center px-[5%]">
           <p className="text-white/80 text-[1.2vw] font-medium tracking-widest uppercase mb-2">
             Welcome to EdzyCanteen
