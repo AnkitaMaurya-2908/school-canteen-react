@@ -43,6 +43,10 @@ This project was built as part of a **Frontend Screening Task**, focusing on cle
 - Clean component structure
 
 ---
+## 🔗 Live Demo
+👉 https://edzycanteen.netlify.app/
+---
+
 ## 📷 Screenshots
 
 ### Home Page
